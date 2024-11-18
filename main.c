@@ -19,6 +19,10 @@ int main() {
             scanf("%d", &matriz[i][j]);
         }
     }
+
+    if (matriz == 0){
+        printf("[matriz vazia]");
+    }
     
     for (int i = 0; i < linhas; i++) {
         for (int j = 0; j < colunas; j++) {
