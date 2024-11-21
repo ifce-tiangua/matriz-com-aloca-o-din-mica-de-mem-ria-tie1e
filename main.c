@@ -10,6 +10,11 @@ int main() {
 
     matriz = (int **)malloc(linhas * sizeof(int *));
 
+    if (colunas == 0 || linhas == 0){
+        printf("[matriz vazia]");
+    }
+    else{
+
     for (int i = 0; i < linhas; i++) {
         matriz[i] = (int *)malloc(colunas * sizeof(int));
     }
@@ -19,10 +24,8 @@ int main() {
             scanf("%d", &matriz[i][j]);
         }
     }
-
-    if (colunas == 0 || linhas == 0){
-        printf("[matriz vazia]");
     }
+// mostrar matriz
 
     for (int i = 0; i < linhas; i++) {
         for (int j = 0; j < colunas; j++) {
